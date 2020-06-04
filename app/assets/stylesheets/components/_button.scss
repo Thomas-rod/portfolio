@@ -1,0 +1,35 @@
+//--------------------------//
+//          BUTTON          //
+//--------------------------//
+
+
+.button {
+  padding: 0.5rem 2rem;
+  border-radius:5px;
+  background-color: $light-blue;
+  color:$gray-blue;
+  border:2px solid $gray-blue;
+  box-shadow: $box-shadow;
+  transition: all $transition ease;
+  &:hover {
+    background-color: $dark-blue;
+    color:$light-blue;
+    border:2px solid $dark-blue;
+    transform: scale(1.02)
+  }
+}
+
+.button-full {
+  padding: 0.5rem 2rem;
+  border-radius:5px;
+  background-color: $dark-red;
+  color:white;
+  border:2px solid $dark-red;
+  box-shadow: $box-shadow;
+  transition: all $transition ease;
+  &:hover {
+    background-color: rgba($dark-red, 0.9);
+    color:white;
+    transform: scale(1.01)
+  }
+}

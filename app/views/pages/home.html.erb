@@ -1,2 +1,85 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render partial: 'shared/navbar' %>
+<div id="main-content">
+  <div id="main-content--title">
+    <h1>Hi,<br>I'm
+      <%= image_tag 't-logo.svg', id:"t-logo"%>
+      homas,<br>web developer.</h1>
+    <p class="subtitle">Front End Developer / Back End Developer / Freelancer</p>
+    <%= mail_to 'jaibesoindaide@thomasrodier.co', "Freelance me", subject:"Hello Thomas, i want to work with you", class:"button" %>
+  </div>
+  <%= image_tag 't-logo.svg', class:"image-banner"%>
+</div>
+<!-- <p class="icon-down"><i class="fas fa-arrow-circle-down"></i></p> -->
+<div id="project-content">
+  <h2>Here some project that i have been working on</h2>
+  <div id="card-container">
+    <div class="project-card">
+      <div class="project-card--left">
+        <h3><span class="font-red">K</span>oobo</h3>
+      </div>
+      <div class="project-card--right">
+        <%= image_tag "koobo_1.png", class:"image_project_card"%>
+        <ul class="project-card--right--cta">
+          <li>
+            <a href="https://github.com/Thomas-rod/koobowebapp/" target="_blank" class="github-project">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.koobo.co/" target="_blank"class="website-project">
+              <span class="text-decoration">See live</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-card--left">
+        <h3><span class="font-red">E</span>xceltips</h3>
+      </div>
+      <div class="project-card--right">
+        <%= image_tag "exceltips_1.png", class:"image_project_card"%>
+        <ul class="project-card--right--cta">
+          <li>
+            <a href="https://github.com/Thomas-rod/Exceltips/" target="_blank" class="github-project">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.exceltips.fr/" target="_blank" class="website-project">
+              <span class="text-decoration">See live</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-card--left">
+        <h3><span class="font-red">R</span>ojasor</h3>
+      </div>
+      <div class="project-card--right">
+        <%= image_tag "rojasor_1.png", class:"image_project_card"%>
+        <ul class="project-card--right--cta">
+          <li>
+            <a href="https://github.com/Thomas-rod/rojasorpdf/" target="_blank" class="github-project">
+              <i class="fab fa-github-alt"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://rojasor.herokuapp.com/" target="_blank" class="website-project">
+              <span class="text-decoration">See live</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="contact-content">
+  <%= simple_form_for prospect_index_path, method: 'post' do |f|%>
+    <%= f.input :email, label: 'Your email', placeholder: 'johndoe@gmail.com', require: true %>
+    <%= f.input :company, label: 'Which are you working for ? ', placeholder: 'Koobo', require: true %>
+    <%= f.input :message, label: 'What exactly brings you here ? ', placeholder: "Even if it's just to send me love, do it !", require: true %>
+    <%= f.button :submit, "Send", class:"button-full"%>
+  <% end %>
+</div>

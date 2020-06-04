@@ -1,1 +1,84 @@
-// Specific CSS for your home-page
+//--------------------------//
+//       MAIN CONTENT       //
+//--------------------------//
+#main-content {
+  margin-left: $margin-side;
+  padding: $padding;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  h1 {
+    font-weight:bold;
+    font-size: 3rem;
+  }
+}
+
+#main-content--title {
+  margin-top: $margin-side;
+  flex: wrap;
+  min-width:40%;
+  a {
+    float:left;
+    margin-top: 25px;
+  }
+}
+
+.image-banner {
+  width:35%;
+  margin:0 auto;
+  transform: rotate(0.02turn);
+}
+
+//--------------------------//
+//      PROJECT CONTENT     //
+//--------------------------//
+#project-content {
+  margin-left: $margin-side;
+  padding: $padding;
+}
+
+    #card-container {
+      width:100%;
+      margin: 5rem 0;
+    }
+
+//--------------------------//
+//     CONTACT ELEMENTS     //
+//--------------------------//
+
+#contact-content {
+  margin: 0 0 $margin-side 5rem;
+  padding: $padding;
+}
+//--------------------------//
+//      OTHER ELEMENTS      //
+//--------------------------//
+
+
+#t-logo {
+  position: relative;
+  top: -5px;
+  right: -7px;
+  transform: scale(1.5);
+}
+
+
+.icon-down {
+  width:calc(100% - 5rem);
+  margin-left: $margin-side;
+  padding: $padding;
+  display:flex;
+  justify-content:center;
+  i {
+    cursor:pointer;
+    font-size: 3rem;
+    animation: moovement 2.5s infinite linear;
+  }
+}
+
+@keyframes moovement {
+  from { transform: translate(0px,0px) }
+  33% { transform: translate(0px, 10px)}
+  66% {transform: translate(0px, -10px)}
+  to { transform: translate(0px, 0px) }
+}

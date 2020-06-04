@@ -1,0 +1,59 @@
+//--------------------------//
+//          BODY CSS        //
+//--------------------------//
+
+body {
+  font-size: 100%;
+  color: $dark-blue;
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: $gray-blue;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $dark-red;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style:none;
+}
+
+a {
+  color: $dark-blue;
+  text-decoration:none;
+  &:hover {
+    text-decoration:none;
+    color:$gray;
+  }
+}
+
+
+//--------------------------//
+//          FONT CSS        //
+//--------------------------//
+
+.subtitle {
+  color: rgba($dark-blue, 0.7);
+}
+.font-red {
+  color: $dark-red;
+}
