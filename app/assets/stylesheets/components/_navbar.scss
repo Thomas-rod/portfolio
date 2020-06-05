@@ -37,8 +37,13 @@
   }
   &:hover {
     .icon-navbar {
-      color:$dark-red;
+      color:$red;
     }
+  }
+  svg {
+    display:block;
+    margin: 0 0.5rem;
+    transition: 0.2s all ease;
   }
 }
 
@@ -66,11 +71,11 @@
   color: $light-blue;
   font-size:1rem;
   margin: 0 1.5rem;
+  transition: 0.2s all ease;
 }
 
 #logo-navbar {
-  display:block;
-  margin: 0 0.5rem;
+
 }
 //--------------------------//
 //       OTHER ELEMENTS     //

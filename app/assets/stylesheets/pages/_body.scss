@@ -16,7 +16,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: $dark-red;
+  background: $red;
 }
 
 a,
@@ -55,5 +55,8 @@ a {
   color: rgba($dark-blue, 0.7);
 }
 .font-red {
-  color: $dark-red;
+  color: $red;
+}
+.font-green {
+  color: $green;
 }

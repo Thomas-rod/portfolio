@@ -31,7 +31,7 @@ $border-radius: 5px;
     .project-card--right {
       border-radius: 0 $border-radius 0 0;
       position:relative;
-      border-left: 2px solid rgba($dark-red, 0.3);
+      border-left: 2px solid rgba($red, 0.3);
     }
 
     .image_project_card {
@@ -80,7 +80,7 @@ $border-radius: 5px;
             color: $light-blue;
             transform: scale(1.1);
             i {
-              color: $dark-red;
+              color: $red;
             }
           }
         }
@@ -92,7 +92,26 @@ $border-radius: 5px;
           &:hover {
             transform: scale(1.1);
             .text-decoration {
-              color: $dark-red;
+              color: $red;
             }
           }
         }
+
+//--------------------------//
+//        CARD SKILLS       //
+//--------------------------//
+
+.card-skill {
+  margin:1rem 1rem 2rem 1rem;
+  width:13%;
+  min-width:100px;
+  border-radius:15px;
+  padding:1rem 0;
+  text-align:center;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+  h6 {margin-top:0.5rem;}
+}

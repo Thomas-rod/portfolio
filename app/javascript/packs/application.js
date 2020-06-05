@@ -26,9 +26,11 @@ require("channels")
 import "bootstrap";
 
 // Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
+import { navbarColorChange } from "../components/colorchangenavbar"
+// import { scrollNavbar } from "../components/scrollnavbar"
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  // initSelect2();
+  navbarColorChange();
+  // scrollNavbar();
 });

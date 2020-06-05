@@ -1,16 +1,35 @@
 //--------------------------//
+//       POSITIONNING       //
+//--------------------------//
+#main-content,
+#project-content,
+#contact-content,
+#skills-content {
+  margin: 2rem $margin-side 5rem $margin-side;
+  padding: $padding;
+  h2 {
+    text-align:center;
+  }
+}
+
+//--------------------------//
 //       MAIN CONTENT       //
 //--------------------------//
 #main-content {
-  margin-left: $margin-side;
-  padding: $padding;
+  margin-bottom:3rem;
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
+  align-items:center;
+  background-image: linear-gradient(180deg, rgba(163,22,33,0) 34%, rgba(244,244,244,1) 100%), url("me.png");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: top 100% right 20%;
+  height:80vh;
   h1 {
     font-weight:bold;
     font-size: 3rem;
   }
+
 }
 
     #main-content--title {
@@ -22,46 +41,11 @@
         margin-top: 25px;
       }
     }
-    #image-positionning {
-      width:100%;
-      position:relative;
-    }
-      #shadow-image-container {
-        width:70%;
-        margin:0 auto;
-        #shadow-image {
-          display:block;
-          margin: 0 auto;
-          width:10rem;
-          height:2rem;
-          border-radius:50%;
-          box-shadow: 0 0 20px 21px rgba(0, 0, 0, 0.2);
-          background-color: rgba(0,0,0, 0.2);
-          animation: shadow 5s infinite linear;
-        }
-      }
-
-      #image-banner {
-        width:70%;
-        display:block;
-        margin:0 auto;
-        animation: moovement 5s infinite linear;
-      }
 
 //--------------------------//
 //        KEY FRAMES        //
 //--------------------------//
-@keyframes shadow {
-  from {
-    box-shadow: 0 0 20px 21px rgba(0, 0, 0, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 24px 40px rgba(0, 0, 0, 0.2);
-  }
-  to {
-    box-shadow: 0 0 20px 21px rgba(0, 0, 0, 0.2);
-  }
-}
+
 
 
 @keyframes moovement {
@@ -74,8 +58,6 @@
 //      PROJECT CONTENT     //
 //--------------------------//
 #project-content {
-  margin-left: $margin-side;
-  padding: $padding;
 }
 
     #card-container {
@@ -84,12 +66,56 @@
     }
 
 //--------------------------//
+//     SKILLS ELEMENTS      //
+//--------------------------//
+#skills-content {
+
+}
+    #card-skills-container {
+      flex-wrap:wrap;
+      margin-top:2rem;
+      width:100%;
+      display:flex;
+    }
+//--------------------------//
 //     CONTACT ELEMENTS     //
 //--------------------------//
-
 #contact-content {
-  margin: 0 0 $margin-side 5rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+#contact-content--left {
+  span {
+    display:flex;
+    align-items:center;
+  }
+  h2 {
+    margin-bottom:1rem;
+  }
+  a {
+    float:left;
+    margin-top: 25px;
+  }
+}
+#contact-content--right {
+  text-align:right;
+}
+
+
+#footer {
+  display:flex;
+  justify-content:space-between;
+  border-top: 1px solid $light-blue;
+  margin: 2rem 8rem;
+  padding: 3rem 0;
   padding: $padding;
+  color: rgba($dark-blue, 0.7);
+  font-size:0.9rem;
+  p:last-child {
+    align-self:center;
+  }
 }
 //--------------------------//
 //      OTHER ELEMENTS      //
@@ -98,22 +124,8 @@
 
 #t-logo {
   position: relative;
-  top: -5px;
+  top: -11px;
   right: -7px;
-  transform: scale(1.5);
-}
-
-
-.icon-down {
-  width:calc(100% - 5rem);
-  margin-left: $margin-side;
-  padding: $padding;
-  display:flex;
-  justify-content:center;
-  i {
-    cursor:pointer;
-    font-size: 3rem;
-    animation: moovement 2.5s infinite linear;
-  }
+  transform: scale(0.9);
 }
 
