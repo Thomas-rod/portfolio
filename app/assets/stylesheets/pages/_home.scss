@@ -20,7 +20,7 @@
   display:flex;
   justify-content:space-between;
   align-items:center;
-  background-image: linear-gradient(180deg, rgba(163,22,33,0) 34%, rgba(244,244,244,1) 100%), url("me_new.png");
+  background-image: linear-gradient(180deg, rgba(163,22,33,0) 34%, rgba(244,244,244,1) 100%), url("https://res.cloudinary.com/dwuorvpu5/image/upload/v1591440549/me_2_orycss.png");
   background-repeat: no-repeat;
   background-size: 400px;
   background-position: top 90% right 20%;
@@ -151,7 +151,7 @@
   }
 
   #main-content {
-    background-image: linear-gradient(180deg, rgba(163, 22, 33, 0) 34%, #f4f4f4 87%), url(me_new.png);
+    background-image: linear-gradient(180deg, rgba(163, 22, 33, 0) 34%, #f4f4f4 75%), url("https://res.cloudinary.com/dwuorvpu5/image/upload/v1591440549/me_2_orycss.png");
     background-size: 300px;
     background-position: top 40% right 20%;
   }
@@ -194,11 +194,11 @@
   #skills-content,
   #contact-content {
     margin: 0 0 0 $margin-side;
-    padding: 2rem 1rem 0 1rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   #main-content {
-    background-image: linear-gradient(180deg, rgba(163, 22, 33, 0) 34%, #f4f4f4 87%), url(me_new.png);
+    background-image: linear-gradient(180deg, rgba(163, 22, 33, 0) 34%, #f4f4f4 75%), url("https://res.cloudinary.com/dwuorvpu5/image/upload/v1591440549/me_2_orycss.png");
     background-size: 300px;
     background-position: top 40% right 20%;
   }
