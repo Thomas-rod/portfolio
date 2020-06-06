@@ -30,13 +30,13 @@ const navbarColorChange = () => {
         letterT.setAttribute("fill", "#cc2c1d")
         letterR.setAttribute("fill", "#cc2c1d")
         circleLogo.setAttribute("fill", "#cc2c1d")
-      } else if (position <= (skillsElement.offsetTop - 500) && position > (projectElement.offsetTop - 500)) {
+      } else if (position > (projectElement.offsetTop ) && position <= (skillsElement.offsetTop - 200)) {
         removeActive();
         document.getElementById("project-nav").classList.add("active")
-      } else if (position <= (contactElement.offsetTop - 500) && position > (skillsElement.offsetTop - 500)) {
+      } else if (position > (skillsElement.offsetTop -200 ) && position <= (skillsElement.offsetTop + 100 ) ) {
         removeActive();
         document.getElementById("skills-nav").classList.add("active")
-      } else if (position >= (skillsElement.offsetTop - 500)) {
+      } else if (position > (skillsElement.offsetTop + 100 )) {
         removeActive();
         document.getElementById("contact-nav").classList.add("active")
       }
@@ -50,7 +50,11 @@ const navbarColorChange = () => {
     // SECOND EVENT : Listen when user is clicking on navlinks
     buttonsNavbar.forEach(button => {
       button.addEventListener('click', () => {
-        console.log(button.getAttribute("data-target"))
+        const targetPosition = document.querySelector(button.getAttribute("data-target")).offsetTop
+        window.scrollTo({
+          top: targetPosition + 20,
+          behavior: 'smooth'
+        })
         let windowPosition = window.pageYOffset;
         changeColor(windowPosition);
 
