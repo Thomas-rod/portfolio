@@ -10,28 +10,40 @@ $border-radius: 5px;
   width:100%;
   margin: 5rem auto;
   box-shadow: 0 0 10px 3px rgba(0,0,0, 0.2);
-  background-color:$dark-blue;
+  color:$light-gray;
   border-radius: $border-radius;
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
+  align-items:stretch;
+  transition: all .5s ease;
+  &:hover {
+    transform:scale(1.04);
+  }
 }
 
     .project-card--left {
+      padding:1rem;
+      background-color:$dark-blue;
       min-width: 40%;
-      color: $light-blue;
+      min-height:100%;
       flex-wrap:wrap;
-      border-radius: $border-radius 0 0 0 ;
+      border-radius: $border-radius 0 0 $border-radius ;
       h3 {
         text-align:center;
         font-size:2rem;
+      }
+      li {
+        font-weight:lighter;
+        margin: 0.5rem 0;
+        i {
+          font-size:0.7rem;
+        }
       }
     }
 
     .project-card--right {
       border-radius: 0 $border-radius 0 0;
       position:relative;
-      border-left: 2px solid rgba($red, 0.3);
     }
 
     .image_project_card {

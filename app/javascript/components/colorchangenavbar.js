@@ -30,10 +30,10 @@ const navbarColorChange = () => {
         letterT.setAttribute("fill", "#cc2c1d")
         letterR.setAttribute("fill", "#cc2c1d")
         circleLogo.setAttribute("fill", "#cc2c1d")
-      } else if (position > (projectElement.offsetTop ) && position <= (skillsElement.offsetTop - 200)) {
+      } else if (position > (projectElement.offsetTop ) && position <= (skillsElement.offsetTop - 400)) {
         removeActive();
         document.getElementById("project-nav").classList.add("active")
-      } else if (position > (skillsElement.offsetTop -200 ) && position <= (skillsElement.offsetTop + 100 ) ) {
+      } else if (position > (skillsElement.offsetTop -400 ) && position <= (skillsElement.offsetTop + 100 ) ) {
         removeActive();
         document.getElementById("skills-nav").classList.add("active")
       } else if (position > (skillsElement.offsetTop + 100 )) {
