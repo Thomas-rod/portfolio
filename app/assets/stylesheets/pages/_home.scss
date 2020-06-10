@@ -27,7 +27,7 @@
   height:80vh;
   h1 {
     font-weight:bold;
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
 }
@@ -125,9 +125,9 @@
 
 #t-logo {
   position: relative;
-  top: -11px;
+  top: -15px;
   right: -7px;
-  transform: scale(0.9);
+  transform: scale(1.3);
 }
 
 
@@ -154,6 +154,14 @@
     background-image: linear-gradient(180deg, rgba($light-gray,0) 34%, #f4f4f4 75%), url("https://res.cloudinary.com/dwuorvpu5/image/upload/v1591440549/me_2_orycss.png");
     background-size: 300px;
     background-position: top 40% right 20%;
+    h1 {
+      font-size:4rem;
+    }
+    #t-logo {
+      top: -13px;
+      right: -11px;
+      transform:scale(0.9);
+    }
   }
 
   #project-content {
@@ -201,6 +209,14 @@
     background-image: linear-gradient(180deg, rgba($light-gray,0) 34%, #f4f4f4 75%), url("https://res.cloudinary.com/dwuorvpu5/image/upload/v1591440549/me_2_orycss.png");
     background-size: 300px;
     background-position: top 40% right 20%;
+    h1 {
+      font-size:4rem;
+    }
+    #t-logo {
+      top: -13px;
+      right: -11px;
+      transform:scale(0.9);
+    }
   }
 
   #project-content {
